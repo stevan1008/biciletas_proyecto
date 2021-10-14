@@ -4,8 +4,7 @@ block content
   // Navigation
   nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
     .container
-      // Start Bootstrap
-      a.navbar-brand.js-scroll-trigger(href='#page-top') 
+      a.navbar-brand.js-scroll-trigger(href='#page-top') Marlon 
       button.navbar-toggler.navbar-toggler-right(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
         | Menu
         i.fas.fa-bars
@@ -14,31 +13,35 @@ block content
           li.nav-item
             a.nav-link.js-scroll-trigger(href='#about') Nosotros
           li.nav-item
-            a.nav-link.js-scroll-trigger(href='#projects') Bicicletas
+            a.nav-link.js-scroll-trigger(href='#bicicletas') Bicicletas
           li.nav-item
             a.nav-link.js-scroll-trigger(href='#signup') Contacto
   // Masthead
   header.masthead
     .container.d-flex.h-100.align-items-center
       .mx-auto.text-center
-        h1.mx-auto.my-0.text-uppercase Red de Bicicletas
-        h2.text-white-50.mx-auto.mt-2.mb-5 La primera comunidad online de ciclistas urbanos
-        a.btn.btn-primary.js-scroll-trigger(href='#about') Comenzar
+        h1.mx-auto.my-0.text-uppercase Bicicletas
+        h2.text-white-50.mx-auto.mt-2.mb-5 La comunidad de ciclistas de aguascalientes
+        a.btn.btn-primary.js-scroll-trigger(href='#about') Comienza
   // About
   section#about.about-section.text-center
     .container
       .row
         .col-lg-8.mx-auto
-          h2.text-white.mb-4 Built with Bootstrap 4
+          h2.text-white.mb-4 Ags
           p.text-white-50
-            | Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
+            | Jardin San Marcos
             a(href='https://startbootstrap.com/template-overviews/grayscale/') the preview page
             |                             . The theme is open source, and you can use it for any purpose, personal or commercial.
-      img.img-fluid(src='/images/ipad.png' alt='')
-  // Projects
-  section#projects.projects-section.bg-light
+      img.img-fluid(src='/assets/img/ipad.png' alt='')
+  // Bicicletas
+  section#bicicletas
     .container
-      #main_map
+      .google-maps
+        iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.4945341007315!2d-102.30303286633053!3d21.878899171326594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ee87bc1d1c79%3A0x68c8cf002457413f!2sHotel%20Boutique%20La%20Casa%20del%20Jard%C3%ADn!5e0!3m2!1ses!2smx!4v1601741510998!5m2!1ses!2smx' width='600' height='450' frameborder='0' style='border:0;' allowfullscreen='' aria-hidden='false' tabindex='0')
+
+
+
   // Signup
   section#signup.signup-section
     .container
@@ -59,7 +62,7 @@ block content
               i.fas.fa-map-marked-alt.text-primary.mb-2
               h4.text-uppercase.m-0 Address
               hr.my-4
-              .small.text-black-50 4923 Market Street, Orlando FL
+              .small.text-black-50 Bogotá 
         .col-md-4.mb-3.mb-md-0
           .card.py-4.h-100
             .card-body.text-center
@@ -67,14 +70,14 @@ block content
               h4.text-uppercase.m-0 Email
               hr.my-4
               .small.text-black-50
-                a(href='#!') hello@yourdomain.com
+                a(href='#!') stevan1008@hotmail.com
         .col-md-4.mb-3.mb-md-0
           .card.py-4.h-100
             .card-body.text-center
               i.fas.fa-mobile-alt.text-primary.mb-2
               h4.text-uppercase.m-0 Phone
               hr.my-4
-              .small.text-black-50 +1 (555) 902-8832
+              .small.text-black-50 +57 320 3171004
       .social.d-flex.justify-content-center
         a.mx-2(href='#!')
           i.fab.fa-twitter
@@ -82,14 +85,12 @@ block content
           i.fab.fa-facebook-f
         a.mx-2(href='#!')
           i.fab.fa-github
-  // Footer
   footer.footer.bg-black.small.text-center.text-white-50
-    .container Copyright &copy; Your Website 2020
+    .container Copyright © Your Website 2020        
   // Bootstrap core JS
   script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
   script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js')
   // Third party plugin JS
   script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
   // Core theme JS
-  script(src='/javascripts/grayscale-scripts.js')
-  script(src='/javascripts/map.js')
+  script(src='javascripts/scripts.js')
