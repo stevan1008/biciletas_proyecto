@@ -152,8 +152,8 @@ app.use('/privacy_policy', function(req, res) {
   res.sendFile('public/privacy_policy.html');
 });
 
-app.use('/google061cfe1019098754', function(req, res) {
-  res.sendFile('public/google061cfe1019098754.html');
+app.use('/googlebc40d2da950016bb', function(req, res) {
+  res.sendFile('public/googlebc40d2da950016bb.html');
 });
 
 app.get('/auth/google',

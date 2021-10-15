@@ -1,0 +1,15 @@
+//From https://www.codersbistro.com/blog/debugging-jasmine-test-cases-visual-studio-code/
+"configurations": [ 
+    { 
+        "type": "node", 
+        "request": "launch", 
+        "name": "Jasmine Current File", 
+        "program": "${workspaceRoot}\\node_modules\\jasmine\\bin\\jasmine.js", 
+        "args": [ 
+            "spec\\api\\bicicleta_api_test.spec.js" 
+        ], 
+        "env": { 
+            "NODE_PATH": "." 
+        } 
+   }
+]
