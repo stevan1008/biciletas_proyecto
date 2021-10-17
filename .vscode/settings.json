@@ -1,5 +1,0 @@
-{
-    "editor.codeActionsOnSave": null,
-    "terminal.integrated.shellArgs.windows": ["-ExecutionPolicy", "Bypass"]
-
-}

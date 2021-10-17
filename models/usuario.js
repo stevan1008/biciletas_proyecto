@@ -20,6 +20,7 @@ const validateEmail = function(email) {
 var usuarioSchema = new Schema({
     nombre: {
         type: String,
+        //trim es para anular espacios vacios al comienzo y al final
         trim: true,
         required: [true, 'El nombre es obligatorio']
     },
@@ -48,6 +49,8 @@ var usuarioSchema = new Schema({
 
 usuarioSchema.plugin(uniqueValidator, {message: 'El {PATH} ya existe con otro usauario.' });
 
+
+//El metodo pre nos permite ejercer la función definida antes de hacer un save. Es decir "hacer esto, antes que save"
 usuarioSchema.pre('save', function(next){
     if(this.isModified('password')){
         this.password = bcrypt.hashSync(this.password, saltRounds);

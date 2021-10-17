@@ -22,7 +22,7 @@ block content
         each usuario, index in usuarios
           tr
             td(scope='row')
-              = index
+              = usuario.id
             td= usuario.nombre
             td= usuario.email
             td= usuario.verificado ? 'SI' : 'NO'
