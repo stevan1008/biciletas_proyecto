@@ -30,8 +30,11 @@ if (process.env.NODE_ENV === 'development'){
     collection: 'sessions'
   });
   store.on('error', function(error) {
-    assert.ifError(error);
-    assert.ok(false);
+    try {
+      assert.ifError('error');
+  } catch(error) {
+      console.log("Error:", error)
+  }
   });
 }
 
